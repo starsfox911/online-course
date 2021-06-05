@@ -81,6 +81,13 @@ html {
   text-decoration: none;
   color: white;
 }
+.button_3 {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: white;
+}
 .buy_course {
   box-sizing: border-box;
   width: 100vw;
@@ -191,7 +198,6 @@ html {
   grid-template-rows: 1fr 1fr;
   grid-gap: 1px;
   justify-content: center;
-  padding-left: 7%;
   width: 100vw;
   height: 400px;
   margin-top: 100px;
@@ -206,7 +212,6 @@ html {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: left;
   color: rgba(255, 255, 255, 0.5);
 }
 .start h1 {
@@ -216,7 +221,6 @@ html {
   font-weight: 700;
   line-height: 67px;
   letter-spacing: 0em;
-  text-align: left;
 }
 .start h1::before {
   content: url(../img/EllipseStroke.png);
@@ -230,10 +234,22 @@ html {
   font-weight: 700;
   line-height: 67px;
   letter-spacing: 0em;
-  text-align: left;
 }
 .start h2::before {
   content: url(../img/EllipseStroke3.png);
+  width: 64px;
+  height: 64px;
+}
+.start h3 {
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+}
+.start h3::before {
+  content: url(../img/EllipseStroke4.png);
   width: 64px;
   height: 64px;
 }
@@ -356,19 +372,20 @@ html {
 .programm {
   color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-column-gap: 3%;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-.programm .a {
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  text-align: right;
-  padding-right: 5px;
-}
 .programm .b {
   text-align: left;
-  padding-left: 5px;
+}
+.programm .v_line {
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+.programm .a {
+  text-align: right;
 }
 .programm .programm_content {
   display: grid;
@@ -391,5 +408,69 @@ html {
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: right;
+}
+.person_main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  padding-bottom: 100px;
+  grid-row-gap: 50px;
+}
+.person_main .person_main_item {
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr;
+  grid-row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+.person_main .person_main_item p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.person_main .person_main_item img {
+  width: 100%;
+  height: 100%;
+}
+.mail {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: end;
+  align-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100px;
+}
+.mail .button_4 {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.mail input,
+.mail button {
+  border: 0px;
+  cursor: pointer;
+}
+.mail input:focus,
+.mail button:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.subscribing {
+  top: 0;
+  left: 30%;
+  position: absolute;
+  background: rgba(128, 128, 128, 0.342);
+  max-width: 40%;
+  min-width: 20%;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
 }
